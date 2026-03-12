@@ -3,7 +3,7 @@
 
 /* Tailwind v4: 扫描 UI 包的组件目录 */
 @source "../node_modules/@teamhelper/ui/dist";
-@source "../../packages/ui-adapter/src";
+@source "../node_modules/@teamhelper/ui-adapter/dist";
 
 @custom-variant dark (&:is(.dark *));
 
