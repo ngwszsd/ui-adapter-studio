@@ -1,0 +1,27 @@
+{
+  "name": "ui-adapter-studio",
+  "version": "0.1.0",
+  "description": "UI Adapter Studio - drag and drop design tool",
+  "private": true,
+  "packageManager": "pnpm@10.24.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "type-check": "turbo run type-check"
+  },
+  "devDependencies": {
+    "turbo": "^2.6.1",
+    "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

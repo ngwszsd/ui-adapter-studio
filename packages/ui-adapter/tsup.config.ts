@@ -1,0 +1,37 @@
+import { defineConfig } from 'tsup';
+
+export default defineConfig({
+  entry: [
+    'src/index.ts',
+    'src/Editor.tsx',
+    'src/Canvas.tsx',
+    'src/Toolbox.tsx',
+    'src/PropertyPanel.tsx',
+    'src/PageItem.tsx',
+    'src/components/Viewport.tsx',
+    'src/components/container/index.ts',
+    'src/components/display/index.ts',
+    'src/components/input/index.ts',
+    'src/components/shared/index.ts',
+    'src/store/useDesignerStore.ts',
+    'src/types/index.ts',
+    'src/persistence/index.ts',
+  ],
+  format: ['cjs', 'esm'],
+  dts: true,
+  clean: true,
+  bundle: true,
+  splitting: true,
+  treeshake: true,
+  loader: {
+    '.svg': 'dataurl',
+    '.png': 'copy',
+    '.jpg': 'copy',
+    '.jpeg': 'copy',
+    '.gif': 'copy',
+    '.webp': 'copy',
+    '.ico': 'copy',
+    '.bmp': 'copy',
+    '.avif': 'copy',
+  },
+});
