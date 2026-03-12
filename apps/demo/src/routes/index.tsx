@@ -1,5 +1,4 @@
 import { createBrowserRouter } from 'react-router';
-import { LayoutRoutes } from './layout-routes';
 import i18n from '@/i18n';
 import { type AppRoute } from './types';
 import { lazyElement } from './utils';
@@ -7,37 +6,17 @@ import { lazyElement } from './utils';
 export const routes: AppRoute[] = [
   {
     path: '/',
-    element: lazyElement(() => import('@/layout')),
-    children: LayoutRoutes,
-  },
-  {
-    path: '/login',
-    element: lazyElement(() => import('@/pages/Login')),
-    name: 'router.login',
-  },
-  {
-    path: '/forgot-password',
-    element: lazyElement(() => import('@/pages/ForgetPassword')),
-    name: 'router.forgotPassword',
-  },
-  {
-    path: '/components-demo',
-    element: lazyElement(() => import('@/pages/ComponentsDemo')),
-    name: 'router.componentsDemo',
-  },
-  {
-    path: '/editor-demo',
     element: lazyElement(() => import('@/pages/EditorDemo')),
     name: 'router.editorDemo',
   },
   {
     path: '*',
-    element: lazyElement(() => import('@/pages/NotFound')),
-    name: 'router.notFound',
+    element: lazyElement(() => import('@/pages/EditorDemo')),
+    name: 'router.editorDemo',
   },
 ];
-export { LayoutRoutes } from './layout-routes';
-export const router = createBrowserRouter(routes);
+const basename = import.meta.env.BASE_URL?.replace(/\/$/, '') || '';
+export const router = createBrowserRouter(routes, { basename });
 
 const updateTitle = (matches: typeof router.state.matches) => {
   for (let i = matches.length - 1; i >= 0; i--) {
