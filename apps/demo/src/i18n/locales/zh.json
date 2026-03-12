@@ -1,0 +1,118 @@
+{
+  "hello.m": "你好",
+  "welcome": "欢迎, {{name}}！",
+  "knowledgeBase": {
+    "processingMode": {
+      "image": "图片处理",
+      "file": "文件处理"
+    },
+    "handlingMethod": {
+      "chunk": "分块存储",
+      "qa": "问答对提取",
+      "image": "图片处理"
+    },
+    "datasetStatus": {
+      "unindexed": "未索引",
+      "indexing": "索引中",
+      "ready": "已就绪",
+      "error": "索引异常"
+    },
+    "trainingStatus": {
+      "training": "训练中",
+      "failed": "训练失败",
+      "fail": "失败",
+      "retrying": "重试中",
+      "retrySuccess": "重试成功",
+      "retryFailed": "重试失败"
+    },
+    "datasetType": {
+      "text": "文本数据集",
+      "image": "图片数据集"
+    },
+    "searchMode": {
+      "semantic": {
+        "label": "语义检索",
+        "desc": "使用向量进行文本相关性查询"
+      },
+      "fulltext": {
+        "label": "全文检索",
+        "desc": "使用传统的全文检索，适合查找一些关键词和主谓语特殊的数据"
+      },
+      "hybrid": {
+        "label": "混合检索",
+        "desc": "使用向量检索与全文检索的综合结果返回，使用 RRF 算法进行排序。"
+      }
+    },
+    "scoreType": {
+      "comprehensive": "综合排名",
+      "rerank": "结果重排",
+      "semantic": "语义检索",
+      "fulltext": "全文检索"
+    },
+    "scoreTypeDesc": {
+      "comprehensive": "通过倒排计算的方式，合并多个检索结果。",
+      "rerank": "通过 Rerank 模型计算句子之间的关联度，范围为 0~1。",
+      "semantic": "通过计算向量之间的距离获取得分，范围为 0~1。",
+      "fulltext": "计算相同关键词的得分，范围为 0~无穷。"
+    },
+    "vectorType": {
+      "default": "默认索引",
+      "custom": "自定义索引",
+      "summary": "摘要索引",
+      "question": "推测问题索引",
+      "image": "图片索引"
+    },
+    "common": {
+      "unknown": "未知"
+    },
+    "handleType": {
+      "doc2x": "Doc2X模式",
+      "deepdoc": "DeepDoc模式",
+      "native": "Native模式",
+      "mineru": "MinerU模式",
+      "vlm": "VLM模式",
+      "textIn": "TextIn模式"
+    },
+    "promptAgentQA": {
+      "description": "<Context></Context> 标记中是一段文本，学习和分析它，并整理学习成果：\n- 提出问题并给出每个问题的答案。\n- 答案需详细完整，尽可能保留原文描述，可以适当扩展答案描述。\n- 答案可以包含普通文字、链接、代码、表格、公示、媒体链接等 Markdown 元素。\n- 最多提出 50 个问题。\n- 生成的问题和答案和源文本语言相同。\n",
+      "fixedText": "请按以下格式整理学习成果:\n<Context>\n文本\n</Context>\nQ1: 问题。\nA1: 答案。\nQ2:\nA2:\n\n------\n\n我们开始吧!\n\n<Context>\n{{text}}\n</Context>\n"
+    }
+  },
+  "network": {
+    "requestFailed": "请求失败",
+    "unknownError": "未知错误",
+    "invalidParams": "请求参数错误",
+    "unauthorized": "未授权，请登录",
+    "forbidden": "没有权限访问",
+    "notFound": "请求资源不存在",
+    "serverError": "服务器内部错误",
+    "noResponse": "请求未响应，请检查网络",
+    "tokenExpired": "登录已过期，请重新登录",
+    "downloadFailed": "下载失败"
+  },
+  "versionCheck": {
+    "newVersionDetected": "检测到新版本，刷新以获取最新功能",
+    "refresh": "刷新",
+    "refreshing": "正在刷新..."
+  },
+  "router": {
+    "manageProject": "项目管理",
+    "manageTeam": "团队管理",
+    "projectManageDetail": "项目详情",
+    "knowledgeBase": "全局知识库",
+    "knowledgeBaseDetail": "全局知识库详情",
+    "textDataset": "文本数据集",
+    "imageDataset": "图片数据集",
+    "datasetDetail": "数据集详情",
+    "userInfo": "个人中心",
+    "workflow": "工作流",
+    "login": "登录",
+    "forgotPassword": "忘记密码",
+    "componentsDemo": "组件展示",
+    "applicationPackaging": "应用打包",
+    "createPackage": "创建应用打包",
+    "packageDetail": "应用打包详情",
+    "editorDemo": "UI编排(Demo)",
+    "notFound": "404"
+  }
+}

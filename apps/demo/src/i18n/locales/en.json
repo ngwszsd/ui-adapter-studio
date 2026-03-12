@@ -1,0 +1,118 @@
+{
+  "hello.m": "Hello",
+  "welcome": "Welcome, {{name}}!",
+  "knowledgeBase": {
+    "processingMode": {
+      "image": "Image Processing",
+      "file": "File Processing"
+    },
+    "handlingMethod": {
+      "chunk": "Chunk Storage",
+      "qa": "QA Pair Extraction",
+      "image": "Image Processing"
+    },
+    "datasetStatus": {
+      "unindexed": "Unindexed",
+      "indexing": "Indexing",
+      "ready": "Ready",
+      "error": "Index Error"
+    },
+    "trainingStatus": {
+      "training": "Training",
+      "failed": "Training Failed",
+      "fail": "Failed",
+      "retrying": "Retrying",
+      "retrySuccess": "Retry Success",
+      "retryFailed": "Retry Failed"
+    },
+    "datasetType": {
+      "text": "Text Dataset",
+      "image": "Image Dataset"
+    },
+    "searchMode": {
+      "semantic": {
+        "label": "Semantic Search",
+        "desc": "Use vectors for text relevance queries"
+      },
+      "fulltext": {
+        "label": "Full-text Search",
+        "desc": "Use traditional full-text search, suitable for keywords and specific subject-predicate data"
+      },
+      "hybrid": {
+        "label": "Hybrid Search",
+        "desc": "Return combined results of vector and full-text search, sorted using RRF algorithm."
+      }
+    },
+    "scoreType": {
+      "comprehensive": "Comprehensive Ranking",
+      "rerank": "Result Rerank",
+      "semantic": "Semantic Search",
+      "fulltext": "Full-text Search"
+    },
+    "scoreTypeDesc": {
+      "comprehensive": "Merge multiple search results through inverted calculation.",
+      "rerank": "Calculate sentence relevance using Rerank model, range 0-1.",
+      "semantic": "Calculate score by distance between vectors, range 0-1.",
+      "fulltext": "Calculate score for same keywords, range 0-infinity."
+    },
+    "vectorType": {
+      "default": "Default Index",
+      "custom": "Custom Index",
+      "summary": "Summary Index",
+      "question": "Hypothetical Question Index",
+      "image": "Image Index"
+    },
+    "common": {
+      "unknown": "Unknown"
+    },
+    "handleType": {
+      "doc2x": "Doc2X Mode",
+      "deepdoc": "DeepDoc Mode",
+      "native": "Native Mode",
+      "mineru": "MinerU Mode",
+      "vlm": "VLM Mode",
+      "textIn": "TextIn Mode"
+    },
+    "promptAgentQA": {
+      "description": "The text within the <Context></Context> tags is the source material. Learn and analyze it, then organize your findings:\n- Ask questions and provide answers for each.\n- Answers should be detailed and complete, preserving original descriptions as much as possible, with appropriate expansion.\n- Answers can contain plain text, links, code, tables, formulas, media links, and other Markdown elements.\n- Ask at most 50 questions.\n- Generated questions and answers should be in the same language as the source text.\n",
+      "fixedText": "Please organize your findings in the following format:\n<Context>\nText\n</Context>\nQ1: Question.\nA1: Answer.\nQ2:\nA2:\n\n------\n\nLet's start!\n\n<Context>\n{{text}}\n</Context>\n"
+    }
+  },
+  "network": {
+    "requestFailed": "Request Failed",
+    "unknownError": "Unknown Error",
+    "invalidParams": "Invalid request parameters",
+    "unauthorized": "Unauthorized, please login",
+    "forbidden": "No access permission",
+    "notFound": "Requested resource does not exist",
+    "serverError": "Internal Server Error",
+    "noResponse": "No response, please check your network",
+    "tokenExpired": "Login expired, please login again",
+    "downloadFailed": "Download failed"
+  },
+  "versionCheck": {
+    "newVersionDetected": "New version available. Refresh to get the latest features.",
+    "refresh": "Refresh",
+    "refreshing": "Refreshing..."
+  },
+  "router": {
+    "manageProject": "Project Management",
+    "manageTeam": "Team Management",
+    "projectManageDetail": "Project Details",
+    "knowledgeBase": "Global Knowledge Base",
+    "knowledgeBaseDetail": "Global Knowledge Base Details",
+    "textDataset": "Text Dataset",
+    "imageDataset": "Image Dataset",
+    "datasetDetail": "Dataset Details",
+    "userInfo": "Personal Center",
+    "workflow": "Workflow",
+    "login": "Login",
+    "forgotPassword": "Forgot Password",
+    "componentsDemo": "Components Demo",
+    "applicationPackaging": "Application Packaging",
+    "createPackage": "Create Package",
+    "packageDetail": "Package Details",
+    "editorDemo": "UI Adapter Demo",
+    "notFound": "404"
+  }
+}

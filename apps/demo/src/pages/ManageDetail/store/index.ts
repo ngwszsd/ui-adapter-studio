@@ -1,0 +1,1 @@
+export { useManageDetailLayoutControlStore } from './layoutControl';

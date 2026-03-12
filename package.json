@@ -21,7 +21,9 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
-      "esbuild"
+      "esbuild",
+      "@parcel/watcher",
+      "core-js"
     ]
   }
 }

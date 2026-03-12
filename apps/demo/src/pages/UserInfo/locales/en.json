@@ -1,0 +1,31 @@
+{
+  "goBack": "Back to the previous page",
+  "userInfo": {
+    "versionPerson": "Personal Version",
+    "versionCompany": "Enterprise Version",
+    "myCo": "My Enterprise",
+    "edit": "Modify",
+    "pwd": "Password",
+    "mobile": "Mobile",
+    "name": "Personal name",
+    "avatarTypeError": "Please upload an image file",
+    "avatarSizeError": "Images cannot exceed 5MB in size",
+    "avatarUpdateSuccess": "The avatar update was successful",
+    "avatarUpdateError": "Avatar update failed",
+    "uploadUrlVoid": "The upload address is invalid, please try again"
+  },
+  "ModifyName": {
+    "label": "Personal name",
+    "placeholder": "Please enter your personal name",
+    "title": "Modify your personal name",
+    "errorRequired": "Please enter your personal name",
+    "errorLength": "Personal name maximum length 20"
+  },
+  "ModifyAvatar": {
+    "title": "Modify Avatar",
+    "description": "Please upload an image file, supports JPG, PNG format, size not exceeding 5MB"
+  },
+  "ImageCropper": {
+    "title": "Edit Image"
+  }
+}

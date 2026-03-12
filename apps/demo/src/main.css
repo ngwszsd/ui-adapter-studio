@@ -1,0 +1,37 @@
+@import './styles/fonts.css';
+@import './styles/xyflow.css';
+
+/* 隐藏 Edge/IE 的密码显示按钮 */
+input[type='password']::-ms-reveal,
+input[type='password']::-ms-clear {
+  display: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family:
+    'InterVariable', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-optical-sizing: auto;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+/* Firefox 修复 - 添加更好的字体渲染 */
+@-moz-document url-prefix() {
+  body {
+    font-feature-settings: 'kern' 1;
+  }
+}

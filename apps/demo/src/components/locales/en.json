@@ -1,0 +1,93 @@
+{
+  "close": "Close",
+  "confirm": "Confirm",
+  "cancel": "Cancel",
+  "loading": "Loading...",
+  "loadingAria": "Loading",
+  "emptyDescription": "No data",
+  "notifications": {
+    "title": "Notifications",
+    "viewAll": "View all notifications"
+  },
+  "button": {
+    "accept": "Accept",
+    "reject": "Reject"
+  },
+  "theme": {
+    "dark": "Dark mode",
+    "light": "Light mode"
+  },
+  "upload": {
+    "dragDescription": "Drag files here, or click to upload",
+    "remove": "Remove",
+    "success": "Upload successful",
+    "fail": "Upload failed",
+    "error": {
+      "size": "File {{fileName}} exceeds size limit",
+      "type": "File {{fileName}} type is not allowed",
+      "parse": "Failed to parse file {{fileName}}",
+      "typeGeneric": "File type not accepted",
+      "sizeLimit": "File size cannot exceed {{maxSize}}MB",
+      "maxCount": "Maximum {{maxCount}} files supported",
+      "typeOrSize": "File type or size not accepted"
+    },
+    "dragger": {
+      "drag": "Drag files here, or",
+      "click": "click to upload",
+      "supportTypes": "Supports {{accept}} file types",
+      "maxCountPrefix": "Max support",
+      "maxCountSuffix": " files, ",
+      "maxSizePrefix": "Single file max",
+      "maxSizeSuffix": "MB"
+    }
+  },
+  "inlineEditableText": {
+    "placeholder": "Please enter",
+    "required": "Cannot be empty"
+  },
+  "select": "Select",
+  "datePicker": {
+    "placeholder": "Please select a date"
+  },
+  "pagination": {
+    "total": "Page {{current}} shows {{count}} results, total {{total}}",
+    "pageSizeLabel": "Page size",
+    "jumpToLabel": "Jump to",
+    "rangePrefix": "Page",
+    "pageSuffix": "shows",
+    "countSuffix": "results, total",
+    "totalSuffix": "items"
+  },
+  "errorBoundary": {
+    "title": "Something went wrong",
+    "description": "Sorry, the application encountered an unexpected error. We've logged this issue.",
+    "errorDetails": "Error Details",
+    "showDetails": "Show Details",
+    "hideDetails": "Hide Details",
+    "reset": "Reload",
+    "goHome": "Go Home",
+    "reportIssue": "Report Issue",
+    "checkingVersion": "Checking for updates...",
+    "newVersionDetected": "New version detected! Page will refresh in {{countdown}} seconds",
+    "cancelAutoRefresh": "Cancel auto refresh"
+  },
+  "sheet": {
+    "close": "Close"
+  },
+  "tips": {
+    "title": "Tips",
+    "processing": "Processing..."
+  },
+  "userInfo": {
+    "versionPerson": "Personal Edition",
+    "versionCompany": "Enterprise Edition",
+    "myCo": "My business",
+    "editBtn": "Modify",
+    "logout": "Log out"
+  },
+  "markdown": {
+    "wechatImage": "This is a WeChat image",
+    "copySuccess": "Copied successfully",
+    "copy": "Copy"
+  }
+}

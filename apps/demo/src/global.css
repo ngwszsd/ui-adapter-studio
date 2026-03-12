@@ -1,0 +1,229 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+/* Tailwind v4: 扫描 UI 包的组件目录 */
+@source "../node_modules/@teamhelper/ui/dist";
+@source "../../packages/ui-adapter/src";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: rgba(248, 249, 250, 1);
+  --foreground: rgba(45, 55, 72, 1);
+  --card: rgba(255, 255, 255, 1);
+  --card-foreground: rgba(45, 55, 72, 1);
+  --primary: rgba(25, 75, 251, 1);
+  --primary-foreground: rgba(250, 250, 250, 1);
+  --tabs: rgba(160, 174, 192, 1);
+  --tabs-foreground: rgba(255, 255, 255, 1);
+  --muted: rgba(248, 249, 250, 1);
+  --muted-foreground: rgba(113, 128, 150, 1);
+  --accent: rgba(248, 249, 250, 1);
+  /* 下拉item hover色 */
+  --accent-foreground: rgba(45, 55, 72, 1);
+  --destructive: rgba(246, 81, 96, 1);
+  --destructive-foreground: rgba(250, 250, 250, 1);
+  --main-yellow: rgba(255, 140, 0, 1);
+  --main-yellow-foreground: rgba(255, 237, 237, 1);
+  --main-green: rgba(238, 255, 237, 1);
+  --main-green-foreground: rgba(37, 180, 59, 1);
+  --border: rgba(244, 244, 244, 1);
+  /* 描边 分割线 */
+  --under-line: rgba(226, 232, 240, 1);
+  /* 下划线 */
+  --input: rgba(226, 232, 240, 1);
+  /* 表单类输入边框 */
+  --ring: var(--primary);
+  /* 表单类输入边框focus */
+  --radius: 0.625rem;
+  --tooltip: oklch(0.205 0 0);
+  --tooltip-foreground: rgba(250, 250, 250, 1);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --popover: var(--card);
+  --popover-foreground: var(--foreground);
+  /* Scrollbar tokens - light */
+  --scrollbar-size: 8px;
+  --scrollbar-radius: 999px;
+  --scrollbar-minlength: 44px;
+  --scrollbar-track: rgba(0, 0, 0, 0.06);
+  --scrollbar-thumb: rgba(100, 110, 124, 0.35);
+  --scrollbar-thumb-hover: rgba(100, 110, 124, 0.55);
+  --scrollbar-thumb-active: rgba(100, 110, 124, 0.7);
+}
+
+.dark {
+  --background: rgba(26, 32, 44, 1);
+  --foreground: rgba(250, 250, 250, 1);
+  --card: rgba(35, 43, 56, 1);
+  --card-foreground: rgba(250, 250, 250, 1);
+  --primary: rgba(25, 75, 251, 1);
+  --primary-foreground: rgba(250, 250, 250, 1);
+  --tabs: rgba(113, 126, 143, 1);
+  --tabs-foreground: rgba(250, 250, 250, 1);
+  --muted: rgba(26, 32, 44, 1);
+  --muted-foreground: rgba(113, 128, 150, 1);
+  --accent: rgba(26, 32, 44, 1);
+  --accent-foreground: rgba(113, 128, 150, 1);
+  --destructive: rgba(246, 81, 96, 1);
+  --destructive-foreground: rgba(250, 250, 250, 1);
+  --main-yellow: rgba(255, 140, 0, 1);
+  --main-yellow-foreground: rgba(72, 55, 38, 1);
+  --main-green: rgba(37, 180, 59, 1);
+  --main-green-foreground: rgba(11, 65, 31, 1);
+  --border: rgba(42, 49, 60, 1);
+  --under-line: rgba(61, 68, 77, 1);
+  --input: var(--border);
+  /* 表单类输入边框 */
+  --ring: var(--primary);
+  /* 表单类输入边框 focus*/
+  --tooltip: oklch(0.205 0 0);
+  --tooltip-foreground: rgba(250, 250, 250, 1);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  /* Scrollbar tokens - dark */
+  --scrollbar-track: rgba(255, 255, 255, 0.08);
+  --scrollbar-thumb: rgba(200, 206, 216, 0.28);
+  --scrollbar-thumb-hover: rgba(200, 206, 216, 0.42);
+  --scrollbar-thumb-active: rgba(200, 206, 216, 0.58);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-tabs: var(--tabs);
+  --color-tabs-foreground: var(--tabs-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-under-line: var(--under-line);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-main-green: var(--main-green);
+  --color-main-green-foreground: var(--main-green-foreground);
+  --color-main-yellow: var(--main-yellow);
+  --color-main-yellow-foreground: var(--main-yellow-foreground);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-tooltip: var(--tooltip);
+  --color-tooltip-foreground: var(--tooltip-foreground);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* 现代 AI 风格滚动条（明暗主题适配） */
+/* WebKit (Chrome/Safari/Edge) */
+::-webkit-scrollbar {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html:hover::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: var(--scrollbar-radius);
+  min-height: var(--scrollbar-minlength);
+  transition: background 0.2s ease;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--scrollbar-thumb-active);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* 隐藏滚动条箭头 */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) transparent;
+}
+
+/*
+ * 这是一个常见的技巧，用于覆盖所有浏览器中自动填充的默认样式。
+ * 它针对的是自动填充状态下的输入框。
+ */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  /* 使用强大的阴影来覆盖背景色，边框通常不受影响 */
+  -webkit-box-shadow: 0 0 0px 1000px var(--card) inset !important;
+  /* 将白色替换为您想要的颜色 */
+  box-shadow: 0 0 0px 1000px var(--card) inset !important;
+
+  /* 同时设置文字颜色 */
+  -webkit-text-fill-color: var(--foreground) !important;
+
+  /* 平滑过渡 */
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/*
+ * 对于不支持 -webkit-autofill 但支持标准语法的未来浏览器（如果出现）
+ */
+@supports (-webkit-touch-callout: none) {
+  input:autofill,
+  input:autofill:hover,
+  input:autofill:focus,
+  input:autofill:active {
+    box-shadow: 0 0 0px 1000px var(--card) inset !important;
+  }
+}
+
+/* 隐藏滚动条样式 */
+.scrollbar-hide {
+  /* 隐藏 webkit 浏览器的滚动条 */
+  -webkit-scrollbar: none;
+  /* 隐藏 Firefox 的滚动条 */
+  scrollbar-width: none;
+  /* 隐藏 IE 的滚动条 */
+  -ms-overflow-style: none;
+}

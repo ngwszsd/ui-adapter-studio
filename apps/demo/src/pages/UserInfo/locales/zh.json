@@ -1,0 +1,31 @@
+{
+  "goBack": "返回上一页",
+  "userInfo": {
+    "versionPerson": "个人版",
+    "versionCompany": "企业版",
+    "myCo": "我的企业",
+    "edit": "修改",
+    "pwd": "密码",
+    "mobile": "手机号",
+    "name": "个人名称",
+    "avatarTypeError": "请上传图片文件",
+    "avatarSizeError": "图片大小不能超过 5MB",
+    "avatarUpdateSuccess": "头像更新成功",
+    "avatarUpdateError": "头像更新失败",
+    "uploadUrlVoid": "上传地址无效，请重试"
+  },
+  "ModifyName": {
+    "label": "个人名称",
+    "placeholder": "请输入个人名称",
+    "title": "修改个人名称",
+    "errorRequired": "请输入个人名称",
+    "errorLength": "个人名称最大长度20"
+  },
+  "ModifyAvatar": {
+    "title": "修改头像",
+    "description": "请上传图片文件，支持 JPG、PNG 格式，大小不超过 5MB"
+  },
+  "ImageCropper": {
+    "title": "编辑图片"
+  }
+}

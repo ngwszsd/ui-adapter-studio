@@ -1,0 +1,391 @@
+.th_ReactMarkdown > *:first-child {
+  margin-top: 0 !important;
+}
+.th_ReactMarkdown > *:last-child {
+  margin-bottom: 0 !important;
+}
+.th_ReactMarkdown a.absent {
+  color: #cc0000;
+}
+.th_ReactMarkdown a.anchor {
+  bottom: 0;
+  cursor: pointer;
+  display: block;
+  left: 0;
+  margin-left: -30px;
+  padding-left: 30px;
+  position: absolute;
+  top: 0;
+}
+.th_ReactMarkdown h1,
+.th_ReactMarkdown h2,
+.th_ReactMarkdown h3,
+.th_ReactMarkdown h4,
+.th_ReactMarkdown h5,
+.th_ReactMarkdown h6 {
+  cursor: text;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 0;
+  position: relative;
+}
+.th_ReactMarkdown h1 .mini-icon-link,
+.th_ReactMarkdown h2 .mini-icon-link,
+.th_ReactMarkdown h3 .mini-icon-link,
+.th_ReactMarkdown h4 .mini-icon-link,
+.th_ReactMarkdown h5 .mini-icon-link,
+.th_ReactMarkdown h6 .mini-icon-link {
+  display: none;
+}
+.th_ReactMarkdown h1:hover a.anchor,
+.th_ReactMarkdown h2:hover a.anchor,
+.th_ReactMarkdown h3:hover a.anchor,
+.th_ReactMarkdown h4:hover a.anchor,
+.th_ReactMarkdown h5:hover a.anchor,
+.th_ReactMarkdown h6:hover a.anchor {
+  line-height: 1;
+  margin-left: -22px;
+  padding-left: 0;
+  text-decoration: none;
+  top: 15%;
+}
+.th_ReactMarkdown h1:hover a.anchor .mini-icon-link,
+.th_ReactMarkdown h2:hover a.anchor .mini-icon-link,
+.th_ReactMarkdown h3:hover a.anchor .mini-icon-link,
+.th_ReactMarkdown h4:hover a.anchor .mini-icon-link,
+.th_ReactMarkdown h5:hover a.anchor .mini-icon-link,
+.th_ReactMarkdown h6:hover a.anchor .mini-icon-link {
+  display: inline-block;
+}
+.th_ReactMarkdown h1 tt,
+.th_ReactMarkdown h1 code,
+.th_ReactMarkdown h2 tt,
+.th_ReactMarkdown h2 code,
+.th_ReactMarkdown h3 tt,
+.th_ReactMarkdown h3 code,
+.th_ReactMarkdown h4 tt,
+.th_ReactMarkdown h4 code,
+.th_ReactMarkdown h5 tt,
+.th_ReactMarkdown h5 code,
+.th_ReactMarkdown h6 tt,
+.th_ReactMarkdown h6 code {
+  font-size: inherit;
+}
+.th_ReactMarkdown h1 {
+  font-size: 28px;
+}
+.th_ReactMarkdown h2 {
+  font-size: 24px;
+}
+.th_ReactMarkdown h3 {
+  font-size: 20px;
+}
+.th_ReactMarkdown h4 {
+  font-size: 16px;
+}
+.th_ReactMarkdown h5 {
+  font-size: 14px;
+}
+.th_ReactMarkdown h6 {
+  font-size: 12px;
+}
+.th_ReactMarkdown p,
+.th_ReactMarkdown blockquote,
+.th_ReactMarkdown ul,
+.th_ReactMarkdown ol,
+.th_ReactMarkdown dl,
+.th_ReactMarkdown table,
+.th_ReactMarkdown pre {
+  margin: 14px 0;
+}
+.th_ReactMarkdown > h2:first-child,
+.th_ReactMarkdown > h1:first-child,
+.th_ReactMarkdown > h1:first-child + h2,
+.th_ReactMarkdown > h3:first-child,
+.th_ReactMarkdown > h4:first-child,
+.th_ReactMarkdown > h5:first-child,
+.th_ReactMarkdown > h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+.th_ReactMarkdown a:first-child h1,
+.th_ReactMarkdown a:first-child h2,
+.th_ReactMarkdown a:first-child h3,
+.th_ReactMarkdown a:first-child h4,
+.th_ReactMarkdown a:first-child h5,
+.th_ReactMarkdown a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.th_ReactMarkdown h1 + p,
+.th_ReactMarkdown h2 + p,
+.th_ReactMarkdown h3 + p,
+.th_ReactMarkdown h4 + p,
+.th_ReactMarkdown h5 + p,
+.th_ReactMarkdown h6 + p {
+  margin-top: 0;
+}
+.th_ReactMarkdown li p.first {
+  display: inline-block;
+}
+.th_ReactMarkdown ul {
+  list-style: unset;
+}
+.th_ReactMarkdown ul,
+.th_ReactMarkdown ol {
+  padding-left: 2em;
+}
+.th_ReactMarkdown ul.no-list,
+.th_ReactMarkdown ol.no-list {
+  list-style-type: none;
+  padding: 0;
+}
+.th_ReactMarkdown ul li > *:first-child,
+.th_ReactMarkdown ol li > *:first-child {
+  margin-top: 0;
+}
+.th_ReactMarkdown ul,
+.th_ReactMarkdown ol {
+  padding-left: 14px;
+}
+.th_ReactMarkdown dl {
+  padding: 0;
+}
+.th_ReactMarkdown dl dt {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  margin: 15px 0 5px;
+  padding: 0;
+}
+.th_ReactMarkdown dl dt:first-child {
+  padding: 0;
+}
+.th_ReactMarkdown dl dt > *:first-child {
+  margin-top: 0;
+}
+.th_ReactMarkdown dl dt > *:last-child {
+  margin-bottom: 0;
+}
+.th_ReactMarkdown dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+.th_ReactMarkdown dl dd > *:first-child {
+  margin-top: 0;
+}
+.th_ReactMarkdown dl dd > *:last-child {
+  margin-bottom: 0;
+}
+.th_ReactMarkdown blockquote {
+  border-left: 4px solid #dddddd;
+  color: #777777;
+  padding: 0 15px;
+}
+.th_ReactMarkdown blockquote > *:first-child {
+  margin-top: 0;
+}
+.th_ReactMarkdown blockquote > *:last-child {
+  margin-bottom: 0;
+}
+.th_ReactMarkdown table {
+  width: 100%;
+}
+.th_ReactMarkdown table th {
+  font-weight: bold;
+}
+.th_ReactMarkdown table th,
+.th_ReactMarkdown table td {
+  padding: 6px 13px;
+}
+.th_ReactMarkdown table tr {
+  background-color: #ffffff;
+}
+.th_ReactMarkdown table tr:nth-child(2n) {
+  background-color: #f0f0f0;
+}
+.th_ReactMarkdown img {
+  max-width: 100%;
+}
+.th_ReactMarkdown span.frame {
+  display: block;
+  overflow: hidden;
+}
+.th_ReactMarkdown span.frame > span {
+  border: 1px solid #dddddd;
+  display: block;
+  float: left;
+  margin: 13px 0 0;
+  overflow: hidden;
+  padding: 7px;
+  width: auto;
+}
+.th_ReactMarkdown span.frame span img {
+  display: block;
+  float: left;
+}
+.th_ReactMarkdown span.frame span span {
+  clear: both;
+  color: #333333;
+  display: block;
+  padding: 5px 0 0;
+}
+.th_ReactMarkdown span.align-center {
+  clear: both;
+  display: block;
+  overflow: hidden;
+}
+.th_ReactMarkdown span.align-center > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+.th_ReactMarkdown span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+.th_ReactMarkdown span.align-right {
+  clear: both;
+  display: block;
+  overflow: hidden;
+}
+.th_ReactMarkdown span.align-right > span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+.th_ReactMarkdown span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+.th_ReactMarkdown span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+.th_ReactMarkdown span.float-left span {
+  margin: 13px 0 0;
+}
+.th_ReactMarkdown span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+.th_ReactMarkdown span.float-right > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+.th_ReactMarkdown code,
+.th_ReactMarkdown tt {
+  border: 1px solid #dee0e2;
+  background-color: #f4f6f8;
+  border-radius: 3px;
+  margin: 0 2px;
+  padding: 0 5px;
+}
+.th_ReactMarkdown pre > code {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  margin: 0;
+  padding: 0;
+}
+.th_ReactMarkdown .highlight pre,
+.th_ReactMarkdown pre {
+  border: 1px solid #cccccc;
+  border-radius: 3px 3px 3px 3px;
+  font-size: max(0.9em, 14px);
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+}
+.th_ReactMarkdown pre code,
+.th_ReactMarkdown pre tt {
+  background-color: transparent !important;
+  border: medium none;
+}
+.th_ReactMarkdown hr {
+  margin: 10px 0;
+  border-color: var(--border);
+}
+.th_ReactMarkdown {
+  tab-size: 4;
+  word-spacing: normal;
+  width: 100%;
+  font-size: 14px;
+
+  * {
+    word-break: break-word;
+  }
+
+  pre {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background-color: #171923 !important;
+    overflow-x: auto;
+    color: #fff;
+  }
+
+  pre code {
+    width: 100%;
+  }
+
+  a {
+    text-decoration: underline;
+    color: var(--primary);
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0px;
+    color: var(--foreground);
+
+    thead tr:first-child th {
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+      border-top-width: 1px;
+      border-color: #ccc;
+      background-color: rgba(236, 236, 241, 0.2);
+      overflow: hidden;
+
+      &:first-child {
+        border-top-left-radius: 0.375rem;
+      }
+      &:last-child {
+        border-right-width: 1px;
+        border-top-right-radius: 0.375rem;
+      }
+    }
+
+    td {
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+      border-color: #ccc;
+
+      &:last-of-type {
+        border-right-width: 1px;
+      }
+    }
+
+    tbody tr:last-child {
+      overflow: hidden;
+      td {
+        &:first-child {
+          border-bottom-left-radius: 0.375rem;
+        }
+        &:last-child {
+          border-bottom-right-radius: 0.375rem;
+        }
+      }
+    }
+  }
+}

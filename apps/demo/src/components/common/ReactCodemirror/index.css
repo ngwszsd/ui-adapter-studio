@@ -1,0 +1,46 @@
+.th_ReactCodemirror {
+}
+
+.th_ReactCodemirror > .cm-editor {
+  height: 100%;
+  background: var(--card);
+}
+.th_ReactCodemirror .cm-editor .cm-activeLine {
+  background-color: color-mix(in srgb, var(--primary) 10%, transparent);
+}
+.th_ReactCodemirror > .cm-editor .cm-activeLineGutter {
+  background-color: color-mix(in srgb, var(--primary) 10%, transparent);
+}
+
+.th_ReactCodemirror > .cm-editor.cm-focused {
+  outline: none;
+}
+
+.th_ReactCodemirror .cm-gutters {
+  background: var(--card);
+  border: none;
+}
+
+.th_ReactCodemirror .cm-gutter.cm-lineNumbers {
+  min-width: 40px;
+}
+.th_ReactCodemirror .cm-gutter.cm-lineNumbers .cm-gutterElement {
+  width: 100%;
+  text-align: center;
+}
+
+.th_ReactCodemirror .cm-gutter.cm-foldGutter {
+  width: 20px;
+}
+.th_ReactCodemirror .cm-gutter.cm-foldGutter .cm-gutterElement {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.th_ReactCodemirror
+  .cm-gutter.cm-foldGutter
+  .cm-gutterElement
+  > span[title='Fold line'] {
+  display: block;
+  margin-top: -4px;
+}

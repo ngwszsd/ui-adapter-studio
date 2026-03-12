@@ -1,0 +1,93 @@
+{
+  "close": "关闭",
+  "confirm": "确认",
+  "cancel": "取消",
+  "loading": "加载中...",
+  "loadingAria": "加载中",
+  "emptyDescription": "暂无数据",
+  "notifications": {
+    "title": "消息通知",
+    "viewAll": "查看全部通知"
+  },
+  "button": {
+    "accept": "接受",
+    "reject": "拒绝"
+  },
+  "theme": {
+    "dark": "深色模式",
+    "light": "亮色模式"
+  },
+  "upload": {
+    "dragDescription": "将文件拖到此区域，或点击上传",
+    "remove": "移除",
+    "success": "上传成功",
+    "fail": "上传失败",
+    "error": {
+      "size": "文件 {{fileName}} 大小超出限制",
+      "type": "文件 {{fileName}} 类型不符合要求",
+      "parse": "文件 {{fileName}} 解析失败",
+      "typeGeneric": "文件类型不被接受",
+      "sizeLimit": "文件大小不能超过 {{maxSize}}MB",
+      "maxCount": "最多支持 {{maxCount}} 个文件",
+      "typeOrSize": "文件类型或大小不被接受"
+    },
+    "dragger": {
+      "drag": "将文件拖到此区域，或",
+      "click": "点击上传",
+      "supportTypes": "支持{{accept}}类型文件",
+      "maxCountPrefix": "最多支持",
+      "maxCountSuffix": "个文件, ",
+      "maxSizePrefix": "单个文件最大",
+      "maxSizeSuffix": "MB"
+    }
+  },
+  "inlineEditableText": {
+    "placeholder": "请输入",
+    "required": "不能为空"
+  },
+  "select": "请选择",
+  "datePicker": {
+    "placeholder": "请选择日期"
+  },
+  "pagination": {
+    "total": "显示第 {{current}} 页 {{count}} 条结果，共 {{total}} 条",
+    "pageSizeLabel": "每页数量",
+    "jumpToLabel": "跳转到",
+    "rangePrefix": "显示第",
+    "pageSuffix": "页",
+    "countSuffix": "条结果, 共",
+    "totalSuffix": "条"
+  },
+  "errorBoundary": {
+    "title": "应用发生错误",
+    "description": "抱歉，应用遇到了一个意外错误。我们已经记录了这个问题。",
+    "errorDetails": "错误详情",
+    "showDetails": "显示详情",
+    "hideDetails": "隐藏详情",
+    "reset": "重新加载",
+    "goHome": "返回首页",
+    "reportIssue": "报告问题",
+    "checkingVersion": "正在检查应用版本...",
+    "newVersionDetected": "检测到新版本！页面将在 {{countdown}} 秒后自动刷新",
+    "cancelAutoRefresh": "取消自动刷新"
+  },
+  "sheet": {
+    "close": "关闭"
+  },
+  "tips": {
+    "title": "提示",
+    "processing": "处理中..."
+  },
+  "userInfo": {
+    "versionPerson": "个人版",
+    "versionCompany": "企业版",
+    "myCo": "我的企业",
+    "editBtn": "修改信息",
+    "logout": "退出登录"
+  },
+  "markdown": {
+    "wechatImage": "这是一张微信图片",
+    "copySuccess": "复制成功",
+    "copy": "复制"
+  }
+}
